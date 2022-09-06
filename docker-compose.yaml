@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  snipe-mysql:
+    container_name: snipe-mysql
+    image: mysql
+    env_file:
+      - ./env_file
+    volumes:
+      - snipesql-vol:/var/lib/mysql
+    expose:
+      - "3306"
+
+  snipeit:
+    container_name: snipeit
+    image: snipe/snipe-it
+    env_file:
+      - ./env_file
+    ports:
+      - "80:80"
+    depends_on:
+      - snipe-mysql
+
+volumes:
+  snipesql-vol:
