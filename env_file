@@ -1,7 +1,7 @@
 # Mysql Parameters
 MYSQL_PORT_3306_TCP_ADDR=snipe-mysql
 MYSQL_PORT_3306_TCP_PORT=3306
-MYSQL_ROOT_PASSWORD=lcdatt05
+MYSQL_ROOT_PASSWORD=temp1234
 MYSQL_DATABASE=snipeit
 MYSQL_USER=snipeit
 MYSQL_PASSWORD=snipeit
@@ -12,13 +12,13 @@ MAIL_PORT_587_TCP_ADDR=smtp.sendgrid.net
 #the port for the mailserver (probably 587, could be another)
 MAIL_PORT_587_TCP_PORT=587
 # the default from address, and from name for emails
-MAIL_ENV_FROM_ADDR=noreply@eastrichland.org
+MAIL_ENV_FROM_ADDR=example@example.com
 MAIL_ENV_FROM_NAME=SnipeIT
 # - pick 'tls' for SMTP-over-SSL, 'tcp' for unencrypted
 MAIL_ENV_ENCRYPTION=tcp
 # SMTP username and password
-MAIL_ENV_USERNAME=apikey
-MAIL_ENV_PASSWORD=SG.nNYht1dRRKmpXCwgOSfeNg.ShNZd2IH4V6B9Cx-oB7Ar1h80SJc5idcynLvHeYnLvHeYM-bQ
+MAIL_ENV_USERNAME=
+MAIL_ENV_PASSWORD=
 
 # Snipe-IT Settings
 APP_ENV=production
