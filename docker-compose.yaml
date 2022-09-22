@@ -17,10 +17,14 @@ services:
     image: snipe/snipe-it
     env_file:
       - ./env_file
+    volumes:
+      - snipeit-vol:/var/lib/snipeit
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - snipe-mysql
 
 volumes:
   snipesql-vol:
+  snipeit-vol:
